@@ -120,18 +120,6 @@ function CoinStock(props) {
 
     const newBoxes = []
     async function getData2() {
-    //   if (props.YourWallet) {
-    //     const miObjeto = JSON.parse(localStorage.getItem('PlayCoinsUID'))
-    //     // console.log(n.index);
-
-    //     console.log("1", coinsWealth);
-    //   }
-    //   var coinsToDisplay = coins.slice(0, props.quantity);
-    // if (props.CoinId) {
-    //   const coinName = Object.keys(coinIds).find(key => coinIds[key] === props.CoinId);
-    //   console.log(coinName);
-    //   coinsToDisplay = coins.filter(coin => coin === coinName);
-    // }
     coins.slice(0, props.quantity).map((coin, index) => {
         const fetchUrl = `https://api.coincap.io/v2/assets/${coin}`;
         fetch(fetchUrl)
@@ -165,49 +153,3 @@ function CoinStock(props) {
   )
 }
 export default CoinStock
-// async function getData() {
-//   const docSnap = await getDoc(doc(database, "UserWealth", UID))
-//   const { $, ...Coins } = docSnap.data()
-//   setCoinBoxes(Coins)
-
-//   const newBoxes = []
-//   Promise.all(coins.slice(0, props.quantity).map((coin) => {
-//     const fetchUrl = fetchUrlBase + coin
-//     return axios(fetchUrl)
-//       .then((response) => {
-//         const price = Number(response.data.data.priceUsd).toFixed(2)
-//         const image = coinImages[coin]
-//         const name = coinNames[coin]
-//         const NameTitle = coinNameTitle[name]
-//         const game = coinGames[name]
-//         console.log(coinBoxes);
-
-//         newBoxes.push(
-//           <CoinBox coin={coin} image={image} NameTitle={NameTitle} price={price} />
-//           // <div className='CoinBox' key={coin}>
-
-//           //   <img src={image} alt={image} />
-
-//           //   <p>
-//           //     {NameTitle}
-//           //   </p> {/*PONER UN DESPLEGABLE HOVER PARA VER INFO DE CDA MONEDA*/}
-//           //   <p>
-//           //     {price}$
-//           //   </p>
-
-
-//           //   <Link></Link>
-//           //   <Link></Link>
-//           // </div>
-//         )
-//       })
-
-//   }))
-//     .then(() => {
-//       setStock(newBoxes)
-//     })
-// }
-
-// // getData()
-
-

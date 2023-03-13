@@ -26,7 +26,7 @@ function App() {
   const [coinsWealth, setWealth] = useState([])
 
   useEffect(() => {
-    if (localStorage.getItem('PlayCoinsUID') !== "{}") {
+    if (localStorage.getItem('PlayCoinsUID') !== null) {
       const miObjeto = JSON.parse(localStorage.getItem('PlayCoinsUID'));
       setUID(miObjeto["UID"]);
       async function getData() {

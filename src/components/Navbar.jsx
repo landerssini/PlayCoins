@@ -9,7 +9,8 @@ import DesplegableNav from './DesplegableNav'
 function Navbar() {
     const [user, setUser, balance, setBalance, UID, setUID] = useContext(UserContext)
     useEffect(() => {
-        if (localStorage.getItem('PlayCoinsUID') !== "{}") {
+      console.log(localStorage.getItem('PlayCoinsUID'));
+        if (localStorage.getItem('PlayCoinsUID') !== null) {
           const miObjeto = JSON.parse(localStorage.getItem('PlayCoinsUID'));
           setUID(miObjeto["UID"]);
           async function getData() {
@@ -31,7 +32,7 @@ function Navbar() {
                         <ul className="navbar-nav">
                             <NavLink className={({ isActive }) => `nav-link ${isActive ? "active" : undefined}`} to="/">Home
                             </NavLink>
-                            <NavLink className={({ isActive }) => `nav-link ${isActive ? "active" : undefined}`} to="/Our_digital_wealth">Our digital wealth
+                            <NavLink className={({ isActive }) => `nav-link ${isActive ? "active" : undefined}`} to="/Our_digital_wealth">Our digital currencies
                             </NavLink>
                             {user ? <NavLink className={({ isActive }) => `nav-link ${isActive ? "active" : undefined}`} to="/your_wallet">Your Wallet
                             </NavLink> :null}

@@ -11,8 +11,7 @@ function DesplegableNav() {
         setUser(null)
         setBalance(null)
         setUID(null)
-        const UID_LS = { "UID": undefined };
-        localStorage.setItem('PlayCoinsUID', JSON.stringify(UID_LS));
+        localStorage.removeItem('PlayCoinsUID');
         redirect("/")
 
     }

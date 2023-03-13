@@ -43,7 +43,8 @@ function CoinBox(props) {
       <img src={props.image} alt={props.image} />
 
       <p>
-        {props.NameTitle}
+        {props.NameTitle}/ 
+        {props.game}
       </p>
       {props.YourWallet ?
         <div>

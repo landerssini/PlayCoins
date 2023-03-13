@@ -10,7 +10,7 @@ function Your_wallet() {
   
 
   return (
-    <div><CoinStock YourWallet={true} Grid="coinsPrices1" coinbox="CoinBox5"/></div>
+    <div className='backgroundYW'><CoinStock YourWallet={true} Grid="coinsPrices1" coinbox="CoinBox5"/></div>
   )
 }
 
