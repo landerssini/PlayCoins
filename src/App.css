@@ -1,0 +1,19 @@
+*{
+    font-family: 'Overpass', sans-serif;
+}
+.navbar-logo {
+    width: 5rem;
+}
+
+.profilePic {
+    width: 5rem;
+    margin: 1rem;
+}
+
+.no-padding {
+    padding: 0;
+}
+
+.center {
+    text-align: center;
+}

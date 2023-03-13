@@ -1,0 +1,274 @@
+.images-BGtext p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.85);
+    padding: 10px;
+    font-size: 41px;
+    pointer-events: none;
+}
+
+.images-bg {
+    display: flex;
+
+}
+
+.images-bgBOX {
+    flex: 1;
+    overflow: hidden;
+    height: 40rem;
+    transition: flex .3s ease-in-out;
+}
+
+.images-bgIMG {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.images-bgBOX:hover {
+    flex: 3;
+}
+
+.images-bgIMG img {
+    filter: none;
+}
+
+.images-BGtext {
+    position: relative;
+}
+
+.SECTION {
+    display: grid;
+    grid-template-columns: 40% auto;
+    padding: 8rem;
+    background-color: rgba(247, 37, 133, 0.5);
+    align-items: center;
+}
+
+.SECTION2 {
+    background-color: rgba(67, 97, 238, 0.7);
+    display: grid;
+    grid-template-columns: 40% auto;
+    padding: 8rem;
+}
+
+
+.SEC2Title {
+    grid-area: 1 / 1 / 2 / 3;
+}
+
+.SectionPIC {
+    width: -webkit-fill-available;
+}
+
+.SECT_description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.SECT_description H2 {
+    text-align: center;
+    font-size: 3rem;
+}
+
+.SECT_description p {
+    font-size: 1.35rem;
+    text-align: center;
+}
+
+.SECT_description ul {
+    font-size: 1.35rem;
+    text-align: center;
+}
+
+.SECT_description IMG {
+    width: 10rem;
+}
+
+.coinsDescription {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.coinsDescription img {
+    max-width: 20rem;
+}
+
+
+.CoinBox img {
+    height: 7rem;
+    width: 7rem;
+    padding: 0.4rem;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 1rem;
+    margin: 1rem;
+}
+
+.CoinBox {
+    
+    gap: 1rem;
+    margin: 2rem;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 1rem;
+    
+}
+.CoinBox3 {
+    display: grid;
+    justify-content: space-between;
+    align-items: center;
+    grid-template-columns: 30% 30% 30% ;
+}
+.CoinBox3 p{
+    font-size: 1rem;
+}
+.CoinBox5 {
+    display: grid;
+    justify-content: space-between;
+    align-items: center;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+}
+
+.CoinBox p {
+    margin: 1rem;
+}
+
+.coinsPrices2 {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+.coinsPrices1 {
+    display: grid;
+    width: fit-content;
+    margin: auto;
+}
+.coinsPrices1 p {
+    font-size: 1rem;
+}
+
+@media (max-width:1200px) {
+    .SECTION {
+        grid-template-columns: auto;
+    }
+
+    .SECTION2 {
+        grid-template-columns: auto;
+    }
+
+    .CoinBox img {
+        width: 4rem;
+        height: 4rem;
+    }
+
+    .CoinBox {
+        margin: 1rem;
+    }
+}
+
+@media (max-width:1440px) {
+    .CoinBox img {
+        height: 5rem;
+        width: 5rem;
+    }
+
+    .CoinBox {
+        margin: 0.5rem;
+        gap: 0;
+    }
+
+    .SECT_description H2 {
+        font-size: 2rem;
+    }
+
+    .SECT_description p {
+        font-size: 1rem;
+
+    }
+
+    .SECT_description ul {
+        font-size: 1rem;
+
+    }
+}
+
+@media (min-width:1660px) {
+    .CoinBox p {
+        font-size: 1.5rem;
+    }
+}
+
+@media (min-width:1880px) {
+    .CoinBox p {
+        font-size: 2rem;
+    }
+}
+
+.textManyMore {
+    text-align: center;
+    margin-top: 1rem;
+    font-size: 2rem;
+}
+.custom-input {
+    width: 100%;
+    padding: 12px;
+    border: 1.5px border solid black;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.1);
+    font-size: 16px;
+  }
+
+  /* Estilos para el botón */
+  .custom-button {
+    background-color: #2587d2;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+
+  /* Estilos para el botón al pasar el ratón por encima */
+  .custom-button:hover {
+    background-color: #196199;
+  }
+  .custom-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    margin: 0 auto;
+  }
+  .input-container {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    width: 100%;
+    max-width: 400px;
+  }
+footer{
+    background: rgb(249, 240, 244);
+    padding: 2rem;
+    /* background: linear-gradient(180deg, rgb(255, 255, 255) 21%, rgba(67,97,238,0.6) 69%); */
+}
+.containerCONS {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 50px;
+    background-color: #fff;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px #ddd;
+  }
+  .btnLogSign{
+    margin: 1rem;
+  }
